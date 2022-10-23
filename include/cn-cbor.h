@@ -640,7 +640,7 @@ extern ssize_t cn_cbor_printer_write(char* buffer,
 	const char* indent,
 	const char* crlf);
 
-cn_cbor *ParseJsonString(char *jsonString, int offset, int length);
+cn_cbor *cn_cbor_parse_json(char *jsonString, int offset, int length);
 
 #ifdef __MBED__
 #define ntohs(a) ((uint16_t)(((((uint16_t)(a)) & 0xff) << 8) | (((uint16_t)(a)) & 0xff00) >> 8))
